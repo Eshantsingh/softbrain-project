@@ -1,12 +1,17 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.css'; //bootstrap import //
+import 'bootstrap/dist/css/bootstrap.css';
+import { NavLink } from 'react-router-dom';
+import logo from '../images/logo.png';
+ 
 
 const Navbar =()=>{
     return(
         <>
-           <nav className="navbar navbar-expand-lg navbar-light bg-light">
+   <nav className="navbar navbar-expand-lg navbar-light">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
+    <NavLink className="navbar-brand" to ="/">
+      <img src={logo} alt="logo"/>
+    </NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -14,16 +19,23 @@ const Navbar =()=>{
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ml-auto">
         <li className="nav-item active">
-          <a className="nav-link" href="/">Home</a>
+          <NavLink className="nav-link" to ="/"><span className="uper">Home</span></NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/about">About Us</a>
+          <NavLink className="nav-link" to ="/about"><span className="uper">About</span> </NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/service">Services</a>
+          <NavLink className="nav-link" to ="/services"><span className="uper">Services</span></NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/contact">Contact Us</a>
+          <NavLink className="nav-link" to ="/contact"><span className="uper">Contact</span> </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to ="/login"><span className="uper">Login</span></NavLink>
+        </li>
+
+        <li className="nav-item">
+          <NavLink className="nav-link" to ="/register"><span className="uper">Registration</span></NavLink>
         </li>
       </ul>
 

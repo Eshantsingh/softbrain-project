@@ -13,26 +13,443 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  
+  background-color:#fffdfd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:small;
+  border: 2px solid rgb(249, 249, 250);
+  text-decoration-color: #555;
+  padding: 5px;
+  height: auto;
+  width: auto;
+  
+}
+
+.navbar-expand-lg.navbar-light{
+color: #ff7f50;
+}
+  img {
+    height: 40px;
+    width: 40px;
+  }
+  .log{
+    text-align:center;
+    height: 50%;
+    width: 40%; 
+  }
+
+  .cont{
+    padding-top: 20%;
+    height: 80%;
+    width: 80%; 
+   
+  }
+  .signup{
+    padding-top: 55px;
+  }
+
+  .contact{
+    align-items:center;
+    padding-top: 55px;
+
+  }
+
+   .uper{
+    color:#555;
+   }
+
+  .color{
+    text-align:center;
+    color:#555;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    }
+   
+    .log2{
+      height: 80%;
+      width: 80%;
+    }
+
+    .container-cs
+    {
+        border-radius: none;
+        display:flex;
+        flex-direction: row;
+        justify-content:right;
+        align-items:center;
+        text-align: center;
+        background-color:#fffdfd;
+        
+    }
+    .container-sm  {
+      border-radius: 9%;  
+      display: flex;
+      flex-direction: row;
+      justify-content:right;
+      align-items:center;
+      text-align: center;
+      background-color:#ff7f50;
+      }
+
+      .container{
+        background-color: #ff7f50;
+      }
+      .form-tittle{
+       
+        text-align: center;
+      }
+      .form-submit {
+        background-color: #5c9dda; /* Green */
+        border: none;
+        color:#555;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+      }
+      .form-put{
+        background-color: #5c9dda; /* Green */
+    
+        border: none;
+        color:#555;
+        padding: 10px;
+        text-align: right;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+
+      }
+      .col-13{
+        padding-bottom: 10px;
+        text-align: center;
+        
+      }
+  
+    .container-sm .col-12 {
+      padding-left: 70%;
+      padding-top: 15px;
+     }
+
+   /*icons*/
+   .zmdi zmdi-account{
+    color: #ff7e4f;
+  }
+   .zmdi zmdi-email{
+    color:#ff7e4f;
+    
+   }
+   .zmdi zmdi-phone{
+    color: #ff7e4f;
+   }
+   .zmdi zmdi-text-format{
+    color: #ff7e4f;
+   }
+
+
+  .col-sm-2{
+   text-align: right;
+   
+  }
+  
+  
+  
+    .container-sm .row {
+      padding-top: 10px;
+    
+    }
+
+   .Postal{
+      text-align: left;
+      color:#555;
+    }
+.Postal-tittle{
+  text-align: left;
+  padding-top: 20px;
+  text-align: right 20px;
+}
+
+.box-control{
+  width: 80%;
+  padding: 10px 10px;
+  margin: 3px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+/* cards */
+
+.card{
+ box-shadow: #555555;
+ color:#ff7e4f;
+ max-width: 100%; 
+ font-family: 'Times New Roman', Times, serif;
+ height: 150px;
+}
+
+.card1{
+  width:80%;
+  padding-left: 30%;
+  color: #555555;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+
+}
+.contact-explain{
+  padding: 20px 20px 20px 20px;
+  
+}
+
+.card-title{
+  font-weight: bolder;
+}
+
+.card1-title{
+  font-size: 200%;
+  font-weight: bold;
+  
+}
+
+
+ 
+
+/*footer*/
+
+.footer{
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#ff7e4f;
+    color:#555555;
+    text-align: center;
+}
+.icon{
+
+  width: 25%;
+  align-items: left;
+  display:flex;
+  padding-top: 10px;
+  
+}
+.right{
+  font-size: xx-small;
+  display:flex;
+  font-weight: bolder;
+
+}
+
+/*banner contact */
+
+.banner{
+  width: 100%;
+  height: 100%;
+}
+.contact-us{
+  height: 75%;
+  width: 75%;
+}
+
+.container-ad{
+  text-align: center;
+
+}
+
+
+
+
+/******************************HOME*******************************/
+.home3{
+
+  text-align: left;
+}
+.home4{
+  text-align:left;
+width: 50%;
+
+
+  
+}
+.home2{
+
+  text-align: left;
+}
+
+.container-hm{
+
+      display: flex;
+      flex-direction:row;
+      text-align: center;
+      flex-direction: column;
+     }
+     .home-banner{
+      width: 60%;
+      height: 60%;
+      align-items: center;
+     }
+     .hadding{
+      font-weight: bolder;
+      font-family: 'Times New Roman', Times, serif;
+      padding-left: 20%;
+      padding-right: 20%;
+      padding-top: 20%;
+      
+      color:#555555;
+      text-align:center;
+   
+     }
+     .better{
+   
+      font-family: 'Times New Roman', Times, serif;
+     }
+     .home3{
+   
+      text-align: center;
+     }
+     .home2{
+      text-align: center;
+      align-items: center;
+     }
+
+     .it{
+        color: #ff7e4f;
+        font-weight: bold;
+     }
+
+
+     /****************card Home ************/
+
+     .card-hadding{
+      font-weight: bolder;
+      padding-top: 8%;
+      text-align: center;
+      color: #555555;
+      font-family: 'Times New Roman', Times, serif;
+     }
+     .card-phara{
+      color: #ff7e4f;
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+     }
+     .card11{
+      box-shadow: #555555;
+      color:#ff7e4f;
+      max-width: 100%; 
+      font-family: 'Times New Roman', Times, serif;
+      height: 200px;
+      border-radius: 8%;
+     }
+     .zmdi zmdi-gesture{
+      color:#ff7e4f;
+
+     }
+     .card12-title{
+      font-weight: bolder;
+  
+
+     }
+     .col-sm-4{
+      padding-bottom: 10px;
+     }
+     .card19-title{
+      
+      font-weight: bolder;
+      font-family: 'Times New Roman', Times, serif;
+     }
+     .card99-text{
+      
+      font-family: 'Times New Roman', Times, serif;
+     }
+     
+     .haddingme{
+      color: #555555;
+      font-weight: bolder;
+      font-family: 'Times New Roman', Times, serif;
+      padding-left: 20%;
+      padding-right: 20%;
+      
+      color:#555555;
+     }
+
+     .whyus{
+      color: #555555;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: large;
+      padding-left: 20%;
+      padding-right: 20%;
+     
+      
+     }
+
+.container-dm{
+  
   display: flex;
+  flex-direction:row;
+  text-align: center;
   flex-direction: column;
+}
+.home-why{
+  width: 90%;
+  height: 90%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 10%;
+  
+}
+.homes-why1{
+  padding-top: 5%;
 }
 
-.App-link {
-  color: #61dafb;
+/*************about************************/
+
+.haddingabout{
+  color: #555555;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.whyabout{
+  color: #555555;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.home5{
+  text-align:left;
+  width: 50%;
+  
+}
+.tech{
+  font-size:xx-large;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: #555555;
+  text-decoration: overline underline #ff7f50;
+  
+
+}
+.card50-title{
+  font-weight: bolder;
+  text-decoration:  underline #555555;
+
+
+}
+.card50-text{
+color: #555555;
 }

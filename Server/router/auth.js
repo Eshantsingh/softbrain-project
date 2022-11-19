@@ -16,10 +16,10 @@ router.get('/',(req,res)=> {
 
 
 //Asunc Await advance java Script
-router.post('/register',async (req,res)=>{
-    const {name, lastname, email, phone, password, cpassword }= req.body;
+router.post('/catch',async (req,res)=>{
+    const {name, email, phone, text }= req.body;
 
-   if(!name || !lastname || !email || !phone || !password || !cpassword){
+   if(!name ||  !email || !phone || !text){
     return res.status(422).json({error: "please fill the field"});
    }
 
@@ -29,16 +29,17 @@ router.post('/register',async (req,res)=>{
     if (userExist){
         return res.status(422).json({error:"Email already Exist"});
 
-    }else if (password != cpassword){
-      return res.status(422).json({error: "passwor are not matching"});
+    //}else if (password != cpassword){//
+      //return res.status(422).json({error: "passwor are not matching"});//
    
-}else {
-    const user = new User({name, lastname, email, phone, password, cpassword});
+}else { 
+
+    const user = new User({name,  email, phone,text });
     //passwaor hasing in userSchema
 
     await user.save();
 
-    res.status(201).json({message: "user register succfully "});
+    res.status(201).json({message: "message send succfully "});
     
    }
    
@@ -49,46 +50,46 @@ router.post('/register',async (req,res)=>{
    });
 
 // logine route logine code //
-router.post('/sign',async (req,res) => {
-  try {
-    let token;
-    const{email,password}=req.body;
+//router.post('/sign',async (req,res) => {//
+ // try {//
+   // let token;//
+    //const{email,password}=req.body;//
 
-    if(!email || !password){
-      return res.status(400).json({error:"plz fill data"});
-    }
+   // if(!email || !password){//
+    //  return res.status(400).json({error:"plz fill data"});//
+  //  }//
 
-    const userLogin = await User.findOne ({ email: email});
+    //const userLogin = await User.findOne ({ email: email});//
     
     //console.log(userLogin);   bcrypt method use for compare data is same  //
-    if(userLogin){
-   const isMatch = await bcrypt.compare(password,userLogin.password);
+   // if(userLogin){//
+   //const isMatch = await bcrypt.compare(password,userLogin.password);//
   
    // jwt token for provide uniqe id to user
-   const token = await userLogin.generateAuthToken();
-   console.log(token);
-// store jwt in cookie 
-   res.cookie("jwtoken", token,{
-    expires:new Date (Date.now()+25892000000),
-    httpOnlu:true
-   });
+   //const token = await userLogin.generateAuthToken();//
+   //console.log(token);//
+// store jwt in cookie //
+   //res.cookie("jwtoken", token,{//
+    //expires:new Date (Date.now()+25892000000),//
+    //httpOnlu:true//
+   //});//
 
-   if(!isMatch){
+  // if(!isMatch){
 
-    res.status(400).json({error:"Invalid Credirntials password Pass"});
+ //   res.status(400).json({error:"Invalid Credirntials password Pass"});//
    
-  }else{
-    res.json({message:"user signin successfuly"});
-   }
+ // }else{
+  //  res.json({message:"user signin successfuly"});//
+ //  }//
  
-  }else{
-    res.status(400).json({error:"Invalid Credirntials email "});
-   }
+ // }else{//
+  //  res.status(400).json({error:"Invalid Credirntials email "});//
+   //}//
 
-  }catch (err){
-    console.log(err);
-  }
-});
+ // }catch (err){//
+  //  console.log(err);//
+  //}//
+//});//
 
    //with promisses 
   // User.findOne({email:email})
@@ -96,7 +97,7 @@ router.post('/sign',async (req,res) => {
       //  if(userExist) {
         //    return res.status(422).json({error:"Email already Exist"});
        //}
-       //const user = new User({name, lastname, email, phone});
+       //const user = new User({name, text, email, phone});
 
        //user.save().then(()=>{
        // res.status(201).json({message:"user registered succesfuly"});
