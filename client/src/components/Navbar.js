@@ -34,9 +34,7 @@ const Navbar =()=>{
           <NavLink className="nav-link" to ="/login"><span className="uper">Login</span></NavLink>
         </li>
 
-        <li className="nav-item">
-          <NavLink className="nav-link" to ="/register"><span className="uper">Registration</span></NavLink>
-        </li>
+      
       </ul>
 
     </div>

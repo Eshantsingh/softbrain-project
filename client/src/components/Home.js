@@ -4,6 +4,13 @@ import home from '../images/home.png';
 //import { Carousel } from 'bootstrap';
 import Card from './Card';
 import why from '../images/card.png';
+import web from '../images/web1.png';
+import app from '../images/web2.png';
+import aii from '../images/web3.png';
+import digi from '../images/web4.png';
+import uiux from '../images/web5.png';
+import ecom from '../images/web6.png';
+
 
 
 const Home =()=>{
@@ -38,7 +45,7 @@ const Home =()=>{
    <div className ="container-cd mt-5">
    <div className="row">
    <Card
-   icon={<i className="zmdi zmdi-gesture"></i>}
+   icon={<img src={web} alt="logo"/>}
     tittle="Web App Development"
     matter="We are adept at designing responsive,
          fast-loading, and user-friendly websites that offer a consistent look and
@@ -46,15 +53,14 @@ const Home =()=>{
    />
 
    <Card
-   icon={<i class="zmdi zmdi-chart-donut"></i>}
+   icon={<img src={app} alt="logo"/>}
     tittle="Mobile App Development"
     matter="We create competitive mobile apps for various industrial domains.
     Our mobile app developers follow market trends to ideate,
-     innovate, and create mobile apps.This adds engagement and modernity to apps.
-      Businesses achieve desired user retention rates with these apps."
+     innovate, and create mobile apps."
    />
    <Card
-   icon={<i class="zmdi zmdi-delicious"></i>}
+   icon={<img src={aii} alt="logo"/>}
     tittle="AI & ML"
     matter="With our AI & Machine Learning Consulting,
      you can deliver personalized customer experiences, 
@@ -63,19 +69,19 @@ const Home =()=>{
      product."
    />
     <Card
-   icon={<i class="zmdi zmdi-flickr"></i>}
+   icon={<img src={digi} alt="logo"/>}
     tittle="Digital Marketing"
     matter="We are a leading digital marketing agency offering 360° 
     online marketing solutions to deliver measurable results."
    />
      <Card
-   icon={<i class="zmdi zmdi-laptop"></i>}
+   icon={<img src={uiux} alt="logo"/>}
     tittle="UI/UX"
     matter="Designing interactive UI/UX pages that 
     communicate effectively with our customers."
    />
        <Card
-   icon={<i class="zmdi zmdi-swap-alt"></i>}
+   icon={<img src={ecom} alt="logo"/>}
     tittle="E-commerce systems"
     matter="We have an accomplished team of highly skilled and 
     experienced eCommerce mobile app developers."

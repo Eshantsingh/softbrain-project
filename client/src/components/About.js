@@ -35,11 +35,7 @@ const About =()=>{
       </div>
       
     <div className='home5'>
-  
-  
-   
-
-    <h1 className='haddingabout'>About Us.</h1>
+    <h1 className='haddingabout '>About Us.</h1>
     <p className='whyabout'>‘AQUACON’ is an already established name in the field of Water supply and Sewage line resourcing. 
     With a humble beginning in the year 2014 as a trading house, the organization crossed many mile stones and as on date
      it has two manufacturing units manufacturing Ductile Iron Flanged pipes. This was possible due a combination of 

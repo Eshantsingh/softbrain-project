@@ -1,3 +1,7 @@
+
+
+
+
 .App {
   text-align: center;
 }
@@ -136,10 +140,7 @@ color: #ff7f50;
         
       }
   
-    .container-sm .col-12 {
-      padding-left: 70%;
-      padding-top: 15px;
-     }
+  
 
    /*icons*/
    .zmdi zmdi-account{
@@ -218,9 +219,11 @@ color: #ff7f50;
 .card1-title{
   font-size: 200%;
   font-weight: bold;
-  
+  animation: movemy 5s infinite;
 }
-
+@keyframes movemy {
+  50% {text-shadow: 10px 20px 30px blue;}
+}
 
  
 
@@ -236,17 +239,20 @@ color: #ff7f50;
     color:#555555;
     text-align: center;
 }
-.icon{
+.reserved{
 
-  width: 25%;
-  align-items: left;
-  display:flex;
-  padding-top: 10px;
+ 
+  text-align: center;
+  padding-left: 40%;
+  
+ 
+  flex-direction:row;
+  
   
 }
 .right{
   font-size: xx-small;
-  display:flex;
+  font-family:Arial, Helvetica, sans-serif;
   font-weight: bolder;
 
 }
@@ -277,7 +283,7 @@ color: #ff7f50;
 }
 .home4{
   text-align:left;
-width: 50%;
+  width: 50%;
 
 
   
@@ -299,7 +305,7 @@ width: 50%;
       height: 60%;
       align-items: center;
      }
-     .hadding{
+     .hadding {
       font-weight: bolder;
       font-family: 'Times New Roman', Times, serif;
       padding-left: 20%;
@@ -308,12 +314,30 @@ width: 50%;
       
       color:#555555;
       text-align:center;
-   
+      animation: aquacon 2s linear infinite;
+      animation-direction: alternate;
+     }
+     
+     @keyframes aquacon {
+      from{
+        transform: rotate(6deg);
+      }
+      to {
+        transform: rotate(-6deg);
+      }
      }
      .better{
    
       font-family: 'Times New Roman', Times, serif;
-     }
+      text-decoration:  underline #555555;
+      animation: mymove 5s infinite;
+      
+    }
+    @keyframes mymove {
+      50% {
+        text-decoration-color:#ff7e4f;    
+      }
+    }
      .home3{
    
       text-align: center;
@@ -331,13 +355,26 @@ width: 50%;
 
      /****************card Home ************/
 
-     .card-hadding{
+     .card-hadding {
+      
       font-weight: bolder;
       padding-top: 8%;
       text-align: center;
       color: #555555;
       font-family: 'Times New Roman', Times, serif;
-     }
+      text-decoration: overline underline #555555;
+      animation: mymove 5s infinite;
+      
+    }
+    @keyframes mymove {
+      50% {
+        text-decoration-color:#ff7e4f;    
+      }
+    }
+
+
+
+
      .card-phara{
       color: #ff7e4f;
       text-align: center;
@@ -406,21 +443,44 @@ width: 50%;
   height: 90%;
   align-items: center;
   border-radius: 10%;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
   
 }
-.homes-why1{
-  padding-top: 5%;
+
+@keyframes up-down{
+  from{
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
 }
+.homes-why1  {
+  padding-top: 5%; 
+}
+
+
 
 /*************about************************/
 
-.haddingabout{
+.haddingabout {
+ 
   color: #555555;
   font-weight: bolder;
   font-family: 'Times New Roman', Times, serif;
   padding-left: 10%;
   padding-right: 10%;
+  text-decoration: overline underline #555555;
+  animation: mymove 5s infinite;
+  
 }
+@keyframes mymove {
+  50% {
+    text-decoration-color:#ff7e4f;    
+  }
+}
+
+
 
 .whyabout{
   color: #555555;
@@ -428,10 +488,12 @@ width: 50%;
   font-size: large;
   padding-left: 10%;
   padding-right: 10%;
+
 }
 .home5{
   text-align:left;
   width: 50%;
+  
   
 }
 .tech{
@@ -440,9 +502,14 @@ width: 50%;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bolder;
   color: #555555;
-  text-decoration: overline underline #ff7f50;
+  text-decoration: overline underline #555555;
+  animation: mymove 5s infinite;
   
-
+}
+@keyframes mymove {
+  50% {
+    text-decoration-color:#ff7e4f;    
+  }
 }
 .card50-title{
   font-weight: bolder;

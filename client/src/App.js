@@ -7,7 +7,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Services from './components/Services';
 import Login from './components/Login';
-import Register from './components/Register';
+
 import Footer from './components/Footer';
 const App =()=> {
   return (
@@ -34,9 +34,7 @@ const App =()=> {
       <Login />
       </Route>
       
-      <Route path='/register'>
-      <Register />
-      </Route>
+    
 
       <Footer/>
     </>
